@@ -1,0 +1,41 @@
+{
+  "name": "go-react",
+  "version": "1.0.0",
+  "description": "Go Project with React Frontend",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "dev": "$GOPATH/bin/air -c .air.toml",
+    "win-dev": "%GOPATH%/bin/air -c .air.win.toml",
+    "test": "echo 'Testing...' && go test ./tests -v",
+    "clean": "echo 'Cleaning...' && rm -f ./tmp/main",
+    "build": " node esbuild.js && node build.js",
+    "win-build": "node esbuild.js && node build.js",
+    "run": "node esbuild.js && go run cmd/main.go",
+    "win-run": "node esbuild.js && go run cmd/main.go"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/icons-material": "^5.15.17",
+    "@mui/material": "^5.15.17",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.13",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
+    "autoprefixer": "^10.4.19",
+    "esbuild": "^0.21.2",
+    "esbuild-style-plugin": "^1.6.3",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3"
+  }
+}

@@ -1,49 +1,33 @@
-# Project go-react
+# Project Go-React
 
-One Paragraph of project description goes here
+This is a fullstack project using Go and React. The project is a simple CRUD application that allows users to create, read, update, and delete articles. The backend is written in Go and the frontend is written in React, Material UI as UI library with Tailwindcss configured.
 
-## Getting Started
+## Requirements
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Golang, Nodejs, Air
 
-## MakeFile
+## Command Scripts
 
-run all make commands with clean tests
+install dependencies
+
 ```bash
-make all build
+npm install
+```
+
+start development server
+
+```bash
+make run dev
 ```
 
 build the application
+
 ```bash
-make build
+npm run build
 ```
 
-run the application
-```bash
-make run
-```
+clean application
 
-Create DB container
 ```bash
-make docker-run
-```
-
-Shutdown DB container
-```bash
-make docker-down
-```
-
-live reload the application
-```bash
-make watch
-```
-
-run the test suite
-```bash
-make test
-```
-
-clean up binary from the last build
-```bash
-make clean
+npm run clean
 ```

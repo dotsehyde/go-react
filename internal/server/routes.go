@@ -1,13 +1,20 @@
 package server
 
 import (
-	"github.com/gin-gonic/gin"
+	"go-react/internal/controller"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func (s *Server) RegisterRoutes() http.Handler {
 	r := gin.Default()
-	r.GET("/", s.HelloWorldHandler)
+	r.Static("/assets", "./public/assets")
+	r.LoadHTMLFiles("public/index.html")
+
+	for _, route := range FrontendRoutes {
+		r.GET(route, controller.Home)
+	}
 	r.GET("/health", s.healthHandler)
 
 	return r

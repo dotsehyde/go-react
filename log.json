@@ -1,0 +1,36 @@
+{
+  "console": {
+    "enable": true,
+    "level": "FINE"
+  },
+  "files": [
+    {
+      "enable": true,
+      "level": "DEBUG",
+      "filename": "./logs/request.log",
+      "category": "request",
+      "pattern": "[%D %T] [%C] [%L] (%S) %M"
+    },
+    {
+      "enable": true,
+      "level": "DEBUG",
+      "filename": "./logs/info.log",
+      "category": "info",
+      "pattern": "[%D %T] [%C] [%L] (%S) %M"
+    },
+    {
+      "enable": true,
+      "level": "TRACE",
+      "filename": "./logs/sql.log",
+      "category": "sql",
+      "pattern": "[%D %T] [%C] [%L] (%S) %M"
+    },
+    {
+      "enable": true,
+      "level": "DEBUG",
+      "filename": "./logs/error.log",
+      "category": "error",
+      "pattern": "[%D %T] [%C] [%L] (%S) %M"
+    }
+  ]
+}
