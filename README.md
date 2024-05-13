@@ -1,6 +1,6 @@
 # Project Go-React
 
-This is a fullstack project using Go and React. The project is a simple CRUD application that allows users to create, read, update, and delete articles. The backend is written in Go and the frontend is written in React, Material UI as UI library with Tailwindcss configured.
+This is a fullstack project using Go and React. The project is a simple CRUD application that allows users to create, read, update, and delete articles. The backend is written in Go with Gin Framework and the frontend is written in React, Material UI as UI library with Tailwindcss configured.
 
 ## Requirements
 

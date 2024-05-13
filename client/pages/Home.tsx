@@ -1,8 +1,9 @@
+import mqDown from '@/lib/mqDown'
 import { Grid, Stack, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
 
 const Home = () => {
-  const dowmMd = useMediaQuery("md")
+  const dowmMd = useMediaQuery(mqDown.md)
   return (
     <Grid container>
       <Grid item xs={12}>
